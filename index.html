@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+
+<body onload="getFromLocalStorage()">
+
+
+    <table id="form">
+        <tr>
+            <td><input type="number" placeholder="1-10..." id="num1"></input>
+            </td>
+            <td class="radio">
+                <input type="radio" name="operator" value="+" checked> + </input>
+                <br>
+                <input type="radio" name="operator" value="-"> - </input>
+                <br>
+                <input type="radio" name="operator" value="*"> * </input>
+                <br>
+                <input type="radio" name="operator" value="/"> / </input>
+
+            </td>
+            <td><input type="number" placeholder="1-10..." id="num2"></input>
+            </td>
+            <td onclick="calculate()"><span id="eq">=</span></td>
+            <td>
+                <lable class="result" id="result"></lable>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <ol id="MyList">Last results</ul>
+
+    </ol>
+
+
+</body>
+
+</html>
